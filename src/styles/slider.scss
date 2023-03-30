@@ -1,0 +1,130 @@
+.slider-btn{
+	background-color: white;
+	width: 224px; 
+	display: flex;
+	justify-content: space-between;
+}
+
+.swiper-wrapper{
+	margin-bottom: 24px;
+}
+
+.slider-slide{
+	width: auto;
+}
+.swiper .slider2-slide{
+		height: 160px;
+		flex-direction: column;
+}
+.slider2 .swiper-slide img{
+	align-self: flex-end;
+}
+
+
+.item__btn{
+	background-color: #FF3E79;
+	border-radius: 50px;
+	height: 32px;
+}
+
+.slider-title{
+	background-color: white;
+	text-transform: uppercase;
+	color: #7E7E82;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 16px;
+	margin: 16px 0;
+}
+
+.swiper-container {
+	width:90vw;
+	height:256px;
+	padding: 0;
+	position: relative;
+	font-size: 16px;
+	line-height: 24px;
+	margin:0 auto;
+}
+
+.swiper-pagination-bullet {
+	margin: 16px 12px;
+	min-height:12px;
+	min-width:12px;
+}
+.swiper-pagination-bullet-active {
+	background-color: #B5B6BC;
+}
+
+.slider--hidden{
+	max-height: 180px;
+	overflow : hidden;
+}
+.slider2--hidden{
+	max-height: 200px;
+	overflow : hidden;
+}
+
+.read-more-btn__icon--rotate{
+	transform:rotate(180deg);
+	padding-left: 16px;
+	padding-right: 0;
+}
+@media (min-width: 768px) {
+
+.swiper-wrapper{
+	display: flex;
+	gap:16px;
+	margin: 0;
+	flex-wrap: wrap;
+}
+}
+/*// .price-list__item {
+// 	min-width:260px;
+// 	max-height: 200px;
+// 	font-size: 14px;
+// 	display:flex;
+// 	flex-wrap: wrap;
+//  align-content: space-between;
+// 	align-items:baseline;
+// 	flex-direction: row;
+// 	position: relative;
+// 	padding:16px;
+// 	border-radius: 6px;
+// } 
+
+// .price-list_container {
+// 	margin-top: 16px;
+// 	height: 270px;
+// }
+
+// .price-list__link {
+// 	margin-top: 16px;
+// 	position: relative;
+//  flex-basis:240px;       
+// }
+// .price-list__link::before {
+// 	content:attr(data-title);
+// 	position: absolute;
+// 	top: -16px;
+// 	height: 16px;
+// 	color: #7E7E82;
+// }
+
+// .price-list__price::before {
+// 	content:attr(data-title);
+// 	position: absolute;
+// 	top: -16px;
+// 	height: 16px;
+// 	color: #7E7E82;
+// }
+
+// .price-list__time::before {
+// 	content:attr(data-title);
+// 	position: absolute;
+// 	top: -16px;
+// 	height: 16px;
+// 	color: #7E7E82;
+// }*/
+
+

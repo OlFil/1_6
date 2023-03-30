@@ -1,0 +1,23 @@
+.footer{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 25px;
+}
+.footer__offer{
+	text-align: right;
+}
+
+@media (min-width: 20px) and (max-width: 767px){
+
+	.footer{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		gap:16px;
+	}
+
+	.footer__offer{
+		text-align: center;
+	}
+}
+

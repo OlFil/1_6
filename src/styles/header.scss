@@ -1,0 +1,128 @@
+.header {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 88px;
+  background-color:#FFFFFF;
+  border-bottom: 1px solid #D9FFF5;
+  justify-content: space-between;
+}
+  
+.buttons {
+  display: flex;
+}
+
+.header__menu {
+	display: flex;
+}
+
+.buttons__phone-btn {
+	background-image: url(../images/call.svg);
+}
+
+.buttons__chat-btn {
+	background-image: url(../images/chat.svg);
+}
+
+.buttons__profile-btn {
+	background-image: url(../images/profile.svg);
+}
+
+.buttons__repair-btn {
+	background-image: url(../images/repair.svg);
+}
+.buttons__checkstatus-btn {
+	background-image: url(../images/checkstatus.svg);
+}
+
+.burger-menu {
+background-image: url(../images/burger.svg);
+}
+
+@media (min-width: 20px) and (max-width: 767px) {
+.header{
+  gap: 16px;
+}
+
+.header__menu{
+  padding-left: 16px;
+  display: flex;
+  gap:16px;
+}
+
+.header__buttons{
+  gap:16px;
+  padding-right: 16px;
+}
+
+.buttons__phone-btn{
+  display: none;
+}
+
+.buttons__chat-btn{
+  display: none;
+}
+
+.buttons__profile-btn{
+  display: none;
+}
+
+.header__buttons::before{
+  content:"";
+  width: 2px;
+  height: 32px;
+  background: #EAEAEA;
+  border-radius: 1px;
+  align-self: center;
+  margin-right: 4px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1119px) {
+.header{
+  padding: 24px;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.header__menu{
+  display: flex;
+  gap:40px;
+}
+
+.header__burger-menu::after{
+  content:"";
+  width: 2px;
+  height: 32px;
+  background: #EAEAEA;
+  border-radius: 1px;
+  position: absolute;
+  top:29px;
+  left: 84px;
+
+}
+.header__buttons{
+  gap:16px;
+}
+
+.buttons__profile-btn{
+  margin-right: 40px;
+}
+
+.buttons__profile-btn::after{
+  content:"";
+  width: 2px;
+  height: 32px;
+  background: #EAEAEA;
+  border-radius: 1px;
+  position: absolute;
+  top:29px;
+  right: 142px;
+}
+}
+
+@media (min-width: 1120px) {
+.header{
+  display: none;
+}
+}
