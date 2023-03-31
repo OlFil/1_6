@@ -1,7 +1,5 @@
 .menu{
 	background-color: white;
-	/*width:320px;
-	width: 100%;*/
 	display: none;
 	width: 0;
 	position: absolute;
@@ -41,7 +39,7 @@
 	gap:12px;
 }
 
-.header__exit{
+.exit-btn{
 	 background-image: url(../images/exit.svg);
 	 margin-right: 16px;
 }
@@ -118,4 +116,54 @@
 .button:hover, .button:active{
 	transform: scale(1.1);
 	 transition: transform 0.5s ease-out;
+}
+
+.menu-open{
+	z-index: 2;
+}
+
+.body-hidden{
+	opacity:5%;
+}
+
+
+@media (min-width: 768px) and (max-width: 1119px){
+	.menu{
+		max-width:320px;
+	}	
+
+}
+
+@media (min-width: 1120px){
+
+	body{
+		display: grid;
+		grid-template-columns: 320px 1fr;
+		grid-template-rows: repeat(3, 1fr);
+		grid-template-areas: 
+    "S P"
+    "S P"
+    "S F";
+	}
+	.menu{
+		display: block;
+		width: 320px;
+		padding-bottom: 45%;
+	}
+	.menu .exit-btn{
+		display: none;
+	}
+	.menu{
+		grid-area: S;
+	}
+
+	.page{
+		grid-area: P;
+	}
+
+	.footer{
+		grid-area: F;
+	}
+
+
 }
